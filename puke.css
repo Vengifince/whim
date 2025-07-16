@@ -1,0 +1,157 @@
+body {
+  background: rgba(226,226,226);
+  }
+
+.puke {
+ width: 420px;
+  min-height: 320px;
+  position: relative;
+   margin: 20px auto;
+   border: 5px solid #EDEDED;
+  background: rgba(231,231,231);
+  border-radius: 15px;
+box-shadow: 4px 4px 0px rgba(62,62,62,0.85);
+    color: #323232;
+    font: 15px "Urbanist", sans-serif;
+  line-height: 24px;
+  overflow: hidden;
+  --gradient: linear-gradient(90deg, rgba(var(--main)) 35%, rgba(var(--alt)) 100%);
+    --underline: radial-gradient(circle, rgba(var(--main), 0.80) 10%, rgba(var(--alt), 0.80) 100%);
+    --text-shadow: -1px -1px 0 rgb(255 255 255), 1px -1px 0 rgb(255 255 255), -1px 1px 0 rgb(255 255 255), 1px 1px 0 rgb(255 255 255);
+  --bar: linear-gradient(27deg, rgba(var(--main)) 0%, rgba(var(--alt)) 100%)
+}
+
+.puke-int {
+      position: relative;
+  margin: 24px;
+    border-radius: 10px;
+     background: linear-gradient(rgba(231,231,231), rgba(231,231,231)) padding-box, linear-gradient(to right, rgba(var(--main), 0.5), rgba(var(--alt), 0.45)) border-box;
+    border: 2px solid transparent;
+  font-family: "Urbanist", sans-serif;
+}
+
+.puke-icon span {
+  font-size: 65px;
+  top: -35px;
+  position: absolute;
+  left: -35px;
+  background:  rgba(231,231,231, 1);
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.puke-icon span:before {
+    display: block;
+    background: -webkit-linear-gradient(125deg, rgba(var(--main)), rgba(var(--alt)));;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(var(--alt));
+    opacity: 0.95;
+    text-shadow: none;
+}
+
+.puke-date {
+  position: absolute;
+    top: -10px;
+  border-radius: 15px;
+    right: -15px;
+    width: 100px;
+  padding: 8px;
+    line-height: 100%;
+  text-align: center;
+    font-size: 14px;
+  font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(231,231,231);
+background: linear-gradient(rgba(62,62,62), rgba(62,62,62, 0.85)) padding-box, linear-gradient(to right, rgba(var(--main), 0.5), rgba(var(--alt), 0.45)) border-box;
+    border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.puke-date b {
+color: rgba(231,231,231);
+    background: linear-gradient(to top, rgba(var(--main), .45) 10%, rgba(var(--alt), .85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.puke-date u {
+  margin-left: 8px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 12px;
+    background: linear-gradient(to top, rgba(var(--main), .45) 10%, rgba(var(--alt), .85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.puke-post {
+  font-family: "Urbanist", sans-serif;
+    color: rgba(45, 45, 45);
+    font-size: 15px;
+    text-align: justify;
+    padding: 80px 50px 55px 50px;
+    line-height: 19px;
+    min-height: 100px;
+   background: rgba(231,231,231);
+}
+
+.puke-tagged {
+  font-size: 12px;
+  font-family: "Urbanist", sans-serif;
+  position: relative;
+    line-height: 15px;
+    padding: 15px;
+  width: 339px;
+  background: linear-gradient(rgba(231,231,231), rgba(231,231,231)) padding-box, linear-gradient(to right, rgba(var(--main), 0.5), rgba(var(--alt), 0.45)) border-box;
+    border-top: 2px solid transparent;
+   border-radius: 0px 0px 10px 10px;
+}
+
+.puke-tagged a {
+    font-weight: 900;
+    line-height: 12px;
+    display: inline;
+    position: relative;
+    text-transform: uppercase;
+    color: rgba(var(--alt));
+}
+
+.puke-tagged i {
+    font-size: 11px;
+    margin-right: 2px;
+    background: rgba(var(--main));
+    background: linear-gradient(0deg, rgba(var(--main)), rgba(var(--alt)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+}
+
+.puke-post u {
+font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+    border-image-source: var(--underline);
+    border-bottom: 2px solid;
+    border-width: 2px;
+    border-image-slice: 2;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+.puke-post b {
+          color: rgba(var(--main));
+    background: -webkit-linear-gradient(bottom left, rgba(var(--main), 0.95), rgba(var(--alt), 0.95));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow: none;
+    font-family: "Urbanist", sans-serif bold;
+}
+
+.puke-post i {
+  opacity: 0.75;
+}
