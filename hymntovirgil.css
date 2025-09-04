@@ -1,0 +1,133 @@
+.hymn-to-virgil
+{
+  position: relative;
+  margin: 50px auto;
+  min-height: 150px;
+  width: 450px;
+  background: rgba(242, 242, 242);
+  border-radius: 20px 20px 0px 0px;
+  line-height: 20px;
+  border-right: 3px solid rgba(100,100,100, 0.5);
+  border-bottom: 3px solid rgba(100,100,100, 0.5);
+}
+
+
+
+.htv-square
+{position: absolute;
+margin-left: 30px;
+  margin-top: 20px;
+background: linear-gradient(to bottom right,rgba(100,100,100, 1) 30%,  rgba(65, 65, 65, 1) 100%);
+height: 90px;
+width: 90px;
+z-index: 1;
+  border-radius: 10px;
+border: 1px solid rgba(65,65,65);
+transform: rotate(45deg)}
+
+
+.htv-square-2
+{position: absolute;
+margin-left: 8px;
+  margin-top: 8px;
+background: linear-gradient(to top right,rgba(100,100,100, 1) 30%,  rgba(65, 65, 65, 1) 100%);
+height: 70px;
+width: 70px;
+z-index: 1;
+  border-radius: 10px;
+border: 1px solid rgba(65,65,65);}
+
+.htv-icon
+{position: absolute;
+font-size: 60px;
+  margin-left: 46px;
+  color: rgba(242, 242, 242);
+  z-index: 2;
+  margin-top: 36px;
+  
+}
+
+.htv-date
+{position: absolute;
+margin-top: 77px;
+margin-left: 5px;
+font-size: 15px;
+font-family: 'urbanist', sans-serif;
+font-weight: 700;
+padding: 10px;
+color: rgba(242, 242, 242);
+text-shadow: -1px -1px 0 rgba(var(--main)), 1px -1px 0 rgba(var(--main)), -1px 1px 0 rgba(var(--main)), 1px 1px 0 rgba(var(--main));
+letter-spacing: 5px;
+z-index: 2;}
+
+.htv-bar
+{position: absolute;
+margin-top: 45px;
+  width: 448px;
+height: 30px;
+background: linear-gradient(to right,rgba(var(--alt), 0.8) 40%,  rgba(var(--main), 0.8) 100%);
+border: 1px solid rgba(var(--main), 0.5);}
+
+.htv-post
+{padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 50px;
+padding-top: 140px;
+line-height: 26px;
+font-family: 'urbanist', sans-serif;
+text-align: justify;
+color: rgba(65,65,65)}
+
+.htv-post b
+{color: rgba(var(--main));
+font-weight: 700;}
+
+.htv-post i {
+    opacity: 0.75;
+    font-weight: 700;
+}
+
+.htv-post u {
+  font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    background: linear-gradient(130deg, rgba(var(--main), 0.5) 41.07%, rgba(var(--alt), 0.5) 76.05%);
+    background-position: 0 100%;
+    background-size: 100% 3px;
+    padding-bottom: 0px;
+    background-repeat: repeat-x;
+}
+.htv-post hr{
+    border: 0;
+    height: 2px;
+  width: 90px;
+    background-color: rgba(var(--main));
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.htv-post a
+{text-decoration: none;
+color: rgba(242, 242, 242);
+font-weight: 700;
+ text-shadow: -1px -1px 0 rgba(var(--main)), 1px -1px 0 rgba(var(--main)), -1px 1px 0 rgba(var(--main)), 1px 1px 0 rgba(var(--main));}
+
+.htv-notes
+{height: 45px;
+width:418px;
+border:1px solid rgba(var(--main), 0.5);
+  background: linear-gradient(to left,rgba(var(--alt), 0.8) 40%,  rgba(var(--main), 0.8) 100%);
+  text-align: right;
+  padding: 15px;
+  font-family: 'urbanist';
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(65,65,65);
+  font-weight: 500;
+}
+.htv-notes a
+{text-decoration: none;
+color: rgba(242, 242, 242);
+font-weight: 700;
+ text-shadow: -1px -1px 0 rgba(var(--main)), 1px -1px 0 rgba(var(--main)), -1px 1px 0 rgba(var(--main)), 1px 1px 0 rgba(var(--main));
+font-size: 15px;}
