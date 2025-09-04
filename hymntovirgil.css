@@ -75,9 +75,9 @@ border: 1px solid rgba(var(--main), 0.5);}
 padding-top: 140px;
 line-height: 26px;
 font-family: 'urbanist', sans-serif;
+ font-size: 16px;
 text-align: justify;
-color: rgba(65,65,65);
-font-size: 15px;}
+color: rgba(65,65,65);}
 
 .htv-post b
 {color: rgba(var(--main));
