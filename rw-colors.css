@@ -94,6 +94,6 @@
 #vengeance.rw-tag:before {
   content:var(--unicode);
   font-family:vengeance;
-  font-size: 65px;
+  font-size: 55px;
   text-align: center;
 }
