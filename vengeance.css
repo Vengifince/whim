@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'vengeance';
+  src:  url('https://vengifince.github.io/whim/vengeance.eot');
+  src:  url('https://vengifince.github.io/whim/vengeance.eot#iefix') format('embedded-opentype'),
+    url('https://vengifince.github.io/whim/vengeance.ttf') format('truetype'),
+    url('https://vengifince.github.io/whim/vengeance.woff') format('woff'),
+    url('https://vengifince.github.io/whim/vengeance.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ven-"], [class*=" ven-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vengeance' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ven-angel-wings:before {
+  content: "\e903";
+}
+.ven-daisuke-lock:before {
+  content: "\e900";
+}
+.ven-heart-collar:before {
+  content: "\e901";
+}
+.ven-jules-fish:before {
+  content: "\e902";
+}
