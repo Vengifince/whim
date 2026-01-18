@@ -64,3 +64,11 @@
   --c1: 90, 95, 72;
   --c2: 137, 136, 115;
 }
+
+
+#vengeance.rw-tag:before {
+  content:var(--unicode);
+  font-family:vengeance;
+  font-size: 55px;
+  text-align: center;
+}
