@@ -103,6 +103,11 @@
   --c2: 137, 136, 115;
 }
 
+#roman {
+  --unicode:'\a68';
+  --c1: 160, 125, 119;
+  --c2: 159, 96, 89;
+}
 
 #vengeance.rw-tag:before {
   content:var(--unicode);
