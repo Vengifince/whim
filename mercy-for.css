@@ -312,7 +312,8 @@ border: 1px solid rgba(var(--c1));
 }
 
 .mefr-rel span#familial::before { 
-position: absolute;
+position: relative;
+  margin-left: -300px;
   width: 100px;
     height: 90px;
   content:'\a50'; 
@@ -326,7 +327,8 @@ text-shadow: 1px 1px 1px rgba(var(--c2));
 }
 
 .mefr-rel span#platonic::before { 
-position: absolute;
+position: relative;
+  margin-left: -300px;
   width: 100px;
     height: 90px;
   content:'\a71'; 
@@ -351,7 +353,8 @@ left: 0px;
 }
 
 .mefr-rel span#antagonistic::before { 
-position: absolute;
+position: relative;
+  margin-left: -300px;
   width: 100px;
     height: 90px;
   content:'\a72'; 
@@ -365,7 +368,8 @@ text-shadow: 1px 1px 1px rgba(var(--c2));
 }
 
 .mefr-rel span#romantic::before { 
-position: absolute;
+position: relative;
+  margin-left: -300px;
   width: 100px;
     height: 90px;
   content:'\a46'; 
@@ -379,7 +383,8 @@ text-shadow: 1px 1px 1px rgba(var(--c2));
 }
 
 .mefr-rel span#volatile::before { 
-position: absolute;
+position: relative;
+  margin-left: -300px;
   width: 100px;
     height: 90px;
   content:'\a70'; 
