@@ -314,6 +314,7 @@ border: 1px solid rgba(var(--c1));
 .mefr-rel span#familial::before { 
 	overflow: hidden;
 position: relative;
+	display: inline;
 	margin-top: 20px;
   margin-left: -300px;
   width: 100px;
