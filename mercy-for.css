@@ -333,6 +333,8 @@ text-shadow: 1px 1px 1px rgba(var(--c2));
 	  overflow: hidden;
 position: relative;
   margin-left: -300px;
+	margin-top: 50px;
+	top: 50px;
   width: 100px;
     height: 90px;
   content:'\a71'; 
