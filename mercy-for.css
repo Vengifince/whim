@@ -327,6 +327,7 @@ text-shadow: 1px 1px 1px rgba(var(--c2));
 }
 
 .mefr-rel span#platonic::before { 
+	  overflow: hidden;
 position: relative;
   margin-left: -300px;
   width: 100px;
