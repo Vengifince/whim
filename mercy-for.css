@@ -1,0 +1,393 @@
+  
+
+.mercy-for {
+ margin: 10px auto; 
+ height: 675px;
+ width: auto;
+   --white: 231, 231, 231;
+    --lgray: 207, 207, 207;
+    --dgray: 194, 194, 194;
+    --black: 62, 62, 62;
+}
+
+.mefrtabs {
+ margin: 0px auto; 
+ position: relative;
+ width: 470px; 
+ height:  600px;
+}
+
+.mefrtab {
+ float: left; /* CHANGE TO DISPLAY:BLOCK FOR VERTICAL TABS */
+}
+
+/* position your tab labels in here - also use margins to space your labels - you kind of have to eye until it's centered bc the math with tabs gets confusing */
+.mefrtab label {
+ display: block; /* this lets you fix the label dimensions */
+ width: 50px;
+ height: 50px;
+ margin: 7px;
+ position: relative;
+ left: 6px;
+ top: 605px;
+ background: linear-gradient(to top left,rgba(var(--c1), 0.7) 10%, rgba(var(--c2), 0.7) 60%, rgba(var(--c3), 0.7) 100%);
+ border: 1px solid rgba(var(--c1));
+  border-radius: 10px;
+ z-index: 3;
+  filter: grayscale(1);
+  transition-property: filter;
+  transition-duration: .35s;
+  transition-timing-function: ease-in-out;
+}
+
+.mefrtab label img {
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  object-fit: cover;
+  opacity: 55%;
+  border-radius: 10px;
+}
+
+.mefrtab input[type=radio]:checked ~ label {
+ background: linear-gradient(to top left,rgba(var(--c1), 1) 10%, rgba(var(--c2), 1) 60%, rgba(var(--c3), 1) 100%);
+ border: 1px solid rgba(var(--c1));
+ z-index: 2;
+  filter:grayscale(0.15);
+  transition-property: filter;
+  transition-duration: .35s;
+  transition-timing-function: ease-in-out;
+}
+
+.mefrtab input[type=radio] {
+ display: none; /* DON'T EDIT */
+}
+
+/* if you want tab transitions they go here */
+.mefrcontent {
+ position: absolute;
+ top: 0px;
+ bottom: 0px;
+ left: 0px;
+ right: 0px;
+ background: rgba(var(--white));
+ padding: 20px;
+  border: 1px solid rgba(var(--dgray));
+  border-radius: 10px 10px 10px 10px;
+}
+
+.mefr-title
+{position: absolute;
+  left: 30px;
+  top: 23px;
+  font-size: 45px;
+ color: rgba(var(--black));
+background: linear-gradient(to bottom right, rgba(100,100,100), rgba(var(--black)));
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+border: 1px solid rgba(var(--black));}
+
+.mefr-title span
+{background: rgba(var(--white));
+padding: 10px;
+border-radius: 10px;
+border: 1px solid rgba(var(--dgray));
+color: rgba(var(--c1));
+text-shadow: 1px 1px 1px rgba(var(--c2));}
+
+.mefr-banr
+{position: absolute;
+width: 468px;
+height: 150px;
+top: 0px;
+left: 0px;
+border-radius: 10px 10px 0px 0px;
+background: linear-gradient(90deg,rgba(var(--c1), 1) 0%, rgba(var(--c2), 1) 30%, rgba(var(--c3), 1) 100%);
+}
+
+.mefr-banr img
+{position: absolute;
+width: 468px;
+height: 150px;
+  top: 0px;
+  left: 0px;
+border-radius: 10px 10px 0px 0px;
+content:var(--top);
+object-fit: cover;
+filter: grayscale(1);
+opacity: 25%;
+border-bottom: 1px solid rgba(var(--dgray));
+}
+/* if you want tab transitions they also go here */
+.mefrtab input[type=radio]:checked ~ label ~ .mefrcontent {
+ z-index: 1;
+}
+
+.mefr-land
+{position: absolute;
+  width: 200px;
+top: 150px;
+left: 0px;
+padding: 30px;
+font-family: "Urbanist", sans-serif;
+font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.mefr-key
+{position: absolute;
+width: 120px;
+height: 190px;
+background: rgba(var(--lgray));
+border: 1px solid rgba(var(--dgray));
+border-radius: 20px;
+top: 170px;
+left: 260px;
+  padding: 30px;
+
+}
+
+.mefr-land b
+{color: rgba(var(--c1));
+font-weight: 700;}
+
+.mefr-land i
+{padding: 2px;
+  margin: 2px;
+  display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(90deg,rgba(var(--c1), 0.5) 0%, rgba(var(--c2), 0.5) 30%, rgba(var(--c3), 0.5) 100%);
+    background-repeat: no-repeat;
+    background-position: 120%, 122%, 0 130%;
+background-size: 100%;
+border-radius: 7px;
+border: 1px solid rgba(var(--c1), 0.5);}
+
+.mefr-key span
+{font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+display: inline-flex;
+  align-items: center;
+background: rgba(var(--lgray));
+margin-bottom: 8px;
+font-family: "Urbanist", sans-serif;
+border: 1px solid rgba(var(--dgray));
+border-radius: 5px;
+  color: rgba(var(--black));
+background:linear-gradient(to top left,rgba(var(--c1), 0.7) 10%, rgba(var(--c2), 0.7) 60%, rgba(var(--c3), 0.7) 100%);
+text-shadow: 1px 1px 1px rgba(var(--white));}
+
+.mefr-key span#familial::after { 
+	content:'\a50'; 
+	font-family:'starry'; 
+font-size: 20px;
+ margin-left: 20px;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.mefr-key span#platonic::after { 
+	content:'\a71'; 
+	font-family:'starry'; 
+font-size: 20px;
+ margin-left: 20px;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.mefr-key span#antagonistic::after { 
+	content:'\a72'; 
+	font-family:'starry'; 
+font-size: 20px;
+ margin-left: 20px;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.mefr-key span#romantic::after { 
+	content:'\a46'; 
+	font-family:'starry'; 
+font-size: 20px;
+ margin-left: 20px;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.mefr-key span#volatile::after { 
+	content:'\a70'; 
+	font-family:'starry'; 
+font-size: 20px;
+ margin-left: 20px;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+
+.mefr-key h1
+{  font-family: "Montserrat", sans-serif;
+background: rgba(var(--white));
+padding: 5px;
+position: absolute;
+border-radius: 10px;
+border: 1px solid rgba(var(--dgray));
+left: 125px;
+top: 228px;
+  color: rgba(var(--black));
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mefr-out
+{position: absolute;
+  top: 180px;
+  left: 33px;
+border: 1px solid rgba(var(--dgray));
+width: 85%;
+height: 335px;
+ overflow-x: hidden;
+overflow-y: scroll;}
+
+.mefr-rel
+{display: flex;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+flex-direction: column;
+  gap: 15px;
+  align-content: space-between;
+  flex-wrap: no-wrap;
+}
+
+.mefr-out::-webkit-scrollbar
+{display: none;
+}
+
+.mefr-rel span p::-webkit-scrollbar
+{display: none;
+}
+
+.mefr-rel p
+
+{font-size: 14px;
+  float: left;
+  font-size: 13px;
+  margin-top: 0px;
+width: 260px;
+  height: 50px;
+padding: 20px;
+overflow: scroll;}
+
+.mefr-rel p i
+{font-family: "Montserrat", sans-serif;
+  font-size: 10px}
+
+.mefr-rel p b
+{font-family: "Montserrat", sans-serif;
+  color: rgba(var(--c1));
+  font-size: 12px;}
+
+.mefr-rel span
+{font-family: "Urbanist", sans-serif;
+  height: 90px;
+  width: inherit;
+background: rgba(var(--lgray));
+border: 1px solid rgba(var(--dgray));
+}
+
+.mefr-rel span img
+{float: right;
+  margin-right: 3px;
+  height: 68px;
+  margin-top: 0px;
+width: 70px;
+border: 1px solid rgba(var(--c1));
+  border-radius: 5px 0px 0px 5px;
+  background: linear-gradient(to bottom right, rgba(var(--c1)), rgba(var(--c2)));
+ padding: 10px;
+  outline-style: solid 1px;
+  outline-color: rgba(var(--c1));
+}
+
+.mefr-rel span#familial::before { 
+position: absolute;
+  width: 100px;
+    height: 90px;
+  content:'\a50'; 
+	font-family:'starry'; 
+font-size: 90px;
+left: 0px;
+  font-weight: 400;
+  opacity: 15%;
+  color: rgba(var(--c1));
+text-shadow: 1px 1px 1px rgba(var(--c2));
+}
+
+.mefr-rel span#platonic::before { 
+position: absolute;
+  width: 100px;
+    height: 90px;
+  content:'\a71'; 
+	font-family:'starry'; 
+font-size: 90px;
+left: 0px;
+  font-weight: 400;
+  opacity: 15%;
+  color: rgba(var(--c1));
+text-shadow: 1px 1px 1px rgba(var(--c2));
+}
+
+
+.mefr-bot
+{width: 468px;
+height: 50px;
+bottom: 0px;
+left: 0px;
+  border-radius: 0px 0px 7px 7px;
+ position: absolute;
+ background: linear-gradient(to bottom right, rgba(100,100,100), rgba(var(--black)));
+}
+
+.mefr-rel span#antagonistic::before { 
+position: absolute;
+  width: 100px;
+    height: 90px;
+  content:'\a72'; 
+	font-family:'starry'; 
+font-size: 90px;
+left: 0px;
+  font-weight: 400;
+  opacity: 15%;
+  color: rgba(var(--c1));
+text-shadow: 1px 1px 1px rgba(var(--c2));
+}
+
+.mefr-rel span#romantic::before { 
+position: absolute;
+  width: 100px;
+    height: 90px;
+  content:'\a46'; 
+	font-family:'starry'; 
+font-size: 90px;
+left: 0px;
+  font-weight: 400;
+  opacity: 15%;
+  color: rgba(var(--c1));
+text-shadow: 1px 1px 1px rgba(var(--c2));
+}
+
+.mefr-rel span#volatile::before { 
+position: absolute;
+  width: 100px;
+    height: 90px;
+  content:'\a70'; 
+	font-family:'starry'; 
+font-size: 90px;
+left: 0px;
+  font-weight: 400;
+  opacity: 15%;
+  color: rgba(var(--c1));
+text-shadow: 1px 1px 1px rgba(var(--c2));
+}
