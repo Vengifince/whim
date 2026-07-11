@@ -312,7 +312,9 @@ border: 1px solid rgba(var(--c1));
 }
 
 .mefr-rel span#familial::before { 
+	overflow: hidden;
 position: relative;
+	margin-top: 20px;
   margin-left: -300px;
   width: 100px;
     height: 90px;
